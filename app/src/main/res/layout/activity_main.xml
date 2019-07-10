@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Darkblue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:text="Mandarin Supermarket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/linearLayout"
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txtTitle"
+        android:background="@drawable/mandarinlogo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="#fff"
+            android:background="@drawable/btn_outline"
+            android:id="@+id/btnOrder"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnSettings"
+            android:textStyle="bold"
+            android:text="ORDER"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:fontFamily="@font/montserrat_light"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/btn_outline"
+            android:id="@+id/btnSettings"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:text="SETTINGS"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_light"
+            android:id="@+id/btnExit"
+            android:textColor="#fff"
+            android:background="@drawable/btn_outline"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/btnOrder"
+            android:text="EXIT"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
